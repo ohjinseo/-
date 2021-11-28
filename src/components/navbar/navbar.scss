@@ -1,0 +1,99 @@
+.navbar {
+  flex: 1;
+  background-color: #0b3d92;
+  color: white;
+  border-radius: 0 50px 0 0;
+
+  .navbarWrapper {
+    padding: 15px;
+    .title {
+      display: flex;
+      align-items: center;
+      .deuImg {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        margin-right: 10px;
+      }
+      margin-top: 15px;
+      font-weight: 500;
+      font-size: 35px;
+      font-family: "Gugi", cursive;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .menu {
+      margin-top: 50px;
+      font-size: 27px;
+      padding: 0;
+      .item {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        font-family: "IBM Plex Sans KR", sans-serif;
+        font-weight: 500;
+        cursor: pointer;
+        border-radius: 30px;
+        padding: 5px;
+        transition: 0.2s;
+        border: 2px solid white;
+        &.active {
+          background-color: #ffffff;
+          color: #0b3d92;
+        }
+
+        &:hover {
+          background-color: #ffffff;
+          color: #0b3d92;
+        }
+
+        .icon {
+          margin-left: 10px;
+          margin-right: 10px;
+          font-size: 30px;
+        }
+      }
+    }
+
+    .gradeBox {
+      padding: 20px;
+      margin-top: 80px;
+      background-color: rgb(255, 255, 255);
+      color: #0b3d92;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 30px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+        rgba(0, 0, 0, 0.22) 0px 10px 10px;
+      h3 {
+        font-size: 25px;
+        font-family: "IBM Plex Sans KR", sans-serif;
+      }
+
+      .gradeTitle {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        .icon {
+          font-size: 30px;
+          margin-left: 5px;
+        }
+      }
+
+      .score {
+        font-size: 45px;
+        color: #0b3d92;
+      }
+      margin-bottom: 150px;
+    }
+
+    .imgBox {
+      font-family: "IBM Plex Sans KR", sans-serif;
+      font-size: 30px;
+      text-align: center;
+      font-weight: 700;
+    }
+  }
+}
