@@ -1,7 +1,6 @@
 import './navbar.scss';
 import {  SearchOutlined,  SentimentVeryDissatisfiedOutlined, ShoppingBasketOutlined } from "@material-ui/icons";
-import { useState } from 'react';
-import etImg from '../../public/everytime.png';
+
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {

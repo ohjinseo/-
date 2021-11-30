@@ -1,3 +1,63 @@
 .mypage {
   flex: 4;
+
+  .mypageWrapper {
+    padding: 30px;
+    .title {
+      margin-top: 25px;
+      display: flex;
+      align-items: center;
+      font-family: "IBM Plex Sans KR", sans-serif;
+      color: #0b3d92;
+      font-size: 35px;
+      margin-bottom: 40px;
+
+      .icon {
+        margin-left: 10px;
+        font-size: 30px;
+      }
+    }
+    .desc {
+      font-family: "IBM Plex Sans KR", sans-serif;
+      color: crimson;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .classList {
+      display: flex;
+      height: 500px;
+
+      .signUp {
+        background-color: darkcyan;
+        color: white;
+        border: none;
+        padding: 3px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: "IBM Plex Sans KR", sans-serif;
+      }
+
+      .deleteBtn {
+        background-color: white;
+        color: crimson;
+        border: 2px solid crimson;
+
+        padding: 1px 8px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: "IBM Plex Sans KR", sans-serif;
+
+        &:hover {
+          background-color: crimson;
+          color: white;
+        }
+      }
+    }
+  }
 }
