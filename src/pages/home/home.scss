@@ -85,6 +85,63 @@
           }
         }
       }
+
+      .chipBox {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        display: flex;
+        button {
+          border: none;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          background-color: white;
+          color: #333;
+          font-family: "IBM Plex Sans KR", sans-serif;
+          border-radius: 30px;
+          display: flex;
+          align-items: center;
+          margin-right: 30px;
+          padding: 5px 10px;
+          font-weight: 600;
+          font-size: 14px;
+          color: #333;
+
+          &:nth-child(1) {
+            background-color: rgb(252, 240, 252);
+            color: purple;
+            .icon {
+              margin-left: 5px;
+              color: purple;
+            }
+          }
+
+          &:nth-child(2) {
+            background-color: rgb(238, 255, 243);
+            color: green;
+            .icon {
+              margin-left: 5px;
+              color: green;
+            }
+          }
+
+          &:nth-child(3) {
+            background-color: rgb(240, 246, 255);
+            color: darkblue;
+            .icon {
+              margin-left: 5px;
+              color: darkblue;
+            }
+          }
+
+          &:nth-child(4) {
+            background-color: rgb(255, 243, 238);
+            color: orangered;
+            .icon {
+              margin-left: 5px;
+              color: orangered;
+            }
+          }
+        }
+      }
     }
   }
 

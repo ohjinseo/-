@@ -1,10 +1,11 @@
 import { Box, Checkbox, Chip, IconButton, List, ListItem, ListItemIcon, ListItemText, Modal } from '@material-ui/core'
-import { Search } from '@material-ui/icons'
+import { CancelOutlined, DomainDisabledOutlined, Search } from '@material-ui/icons'
 import ListItemButton from '@mui/material/ListItemButton'
 import { useState } from 'react'
 import { FixedSizeList } from 'react-window'
 import SubjectCard from '../../components/subjectCard/SubjectCard'
 import Topbar from '../../components/topbar/Topbar'
+import { lecture } from '../../public/dummyData'
 import "./home.scss"
 
 const style = {
@@ -27,6 +28,7 @@ export default function Home() {
   const handleClose = () => setOpen(false);
 
   const [checked, setChecked] = useState([0]);
+  let id = 1;
 
   const handleToggle = (value) => () => {
     const currentIndex = checked.indexOf(value);
@@ -139,18 +141,21 @@ export default function Home() {
           </ul>
 
           <div className="chipBox">
-          
+            <button>1학년
+              <CancelOutlined className="icon"/>
+            </button>
+            <button>2학년 <CancelOutlined  className="icon"/></button>
+            <button>동의지천교양대학 <CancelOutlined className="icon" /></button>
+            <button>컴퓨터공학과 <CancelOutlined  className="icon"/></button>
           </div>
 
           <div className="homeBottom">
-            <SubjectCard />
-            <SubjectCard />
-            <SubjectCard />
-            <SubjectCard />
-            <SubjectCard />
-            <SubjectCard />
-            <SubjectCard />
-            <SubjectCard />
+            {
+              lecture.map((item) => (
+                <SubjectCard propsData={item}/>
+              ))
+            }
+          
           </div>
         </div>
       </div>
